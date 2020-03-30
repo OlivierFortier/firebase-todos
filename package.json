@@ -1,0 +1,27 @@
+{
+  "name": "node-todos",
+  "version": "1.0.0",
+  "description": "an app to get familiar with node and express and templating engines",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "Olivier Fortier",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "firebase": "^7.7.0",
+    "firebase-admin": "^8.9.1",
+    "uuid": "^3.4.0"
+  },
+  "engines": {
+    "node": "12.x.x"
+  }
+}

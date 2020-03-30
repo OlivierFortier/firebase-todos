@@ -1,0 +1,48 @@
+html {
+    background-color: rgb(28, 32, 51);
+    color: honeydew;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.list-group {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+.list-item  > div {
+    margin: 3%;
+}
+
+.button-main {
+    border: 0px none;
+    border-radius: 18px;
+background: #1c2033;
+box-shadow: 5px 5px 14px #141724, 
+            -5px -5px 14px #242942;
+            color: honeydew;
+            padding: 1.2rem;
+}
+
+.completed {
+    text-decoration: line-through;
+}

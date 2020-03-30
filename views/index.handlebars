@@ -1,0 +1,27 @@
+<h1>Node, Express, & Firebase Todo List</h1>
+<div>
+    <form action="addTodo" name="title" method="post">
+        <input class="button-main" placeholder="type here" type="text" name="title" id="title">
+        <button class="button-main" type="submit">Add Todo</button>
+    </form>
+</div>
+<ul class="list-group">
+    {{#each todos}}
+    <li class="list-item">
+    <form action="toggleTodo/{{this.id}}" name="completed" method="post">
+        <button class="button-main" type="submit">toggle</button>
+    </form>
+    {{!-- add class if completed else not --}}
+    {{#if this.completed}}
+        <div class="completed">{{this.title}}</div>
+    {{else}}
+        <div>{{this.title}}</div>
+    {{/if}}
+    
+    <form action="deleteTodo/{{this.id}}" name="delTodo" method="post">
+        
+        <button class="button-main" type="submit">Delete Todo</button>
+    </form>
+    </li>
+    {{/each}}
+</ul>
