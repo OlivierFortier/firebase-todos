@@ -18,7 +18,7 @@
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "firebase": "^7.7.0",
-    "firebase-admin": "^8.9.1",
+    "firebase-admin": "^11.4.1",
     "uuid": "^3.4.0"
   },
   "engines": {
